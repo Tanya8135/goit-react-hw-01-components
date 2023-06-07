@@ -2,6 +2,8 @@
 @import './components/app/App.css';
 @import './components/profile/Profile.css';
 @import './components/statistics/Statistics.css';
+@import './components/friend/Friend.css';
+@import './components/transaction/Transaction.css';
 
 body {
   margin: 0;
