@@ -1,10 +1,12 @@
+import style from './TransNameHistory.module.css';
+
 const NameHistory = () => {
     return (
-        <thead className="name-hstr-container">
-            <tr className="tablet-hstr">
-                <th className="tablet-name">Type</th>
-                <th className="tablet-name">Amount</th>
-                <th className="tablet-name">Currency</th>
+        <thead className={style['name-hstr-container']}>
+            <tr className={style['tablet-hstr']}>
+                <th className={style['tablet-name']}>Type</th>
+                <th className={style['tablet-name']}>Amount</th>
+                <th className={style['tablet-name']}>Currency</th>
             </tr>
         </thead>
     )

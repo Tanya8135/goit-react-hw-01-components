@@ -1,7 +1,8 @@
 import Profile from 'components/Profile';
 import Statistics from 'components/Statistics';
+// import StatisticsItem from 'components/StatisticsItem/StatisticsItem';
 import Friend from 'components/Friend';
-// import FriendList from 'components/FriendList';
+import FriendList from 'components/FriendList';
 import TransactionHistory from 'components/TransactionHistory';
 import TransNameHistory from 'components/TransNameHistory';
 import TransInfoHistory from 'components/TransInfoHistory';
@@ -23,10 +24,10 @@ const App = () => {
             stats={user.stats} />
         <Statistics title="Upload stats" stats={data} />
         <Friend friends={friends} />
-        {/* {friends.map((listFriend) => (
+        {friends.map((listFriend) => (
             <FriendList key={listFriend.id} {...listFriend} />
         ))
-        } */}
+        }
         <TransactionHistory items={transactions} />
         <TransNameHistory />
         {transactions.map((listTrans) => (

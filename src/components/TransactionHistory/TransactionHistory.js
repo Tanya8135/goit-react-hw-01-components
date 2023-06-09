@@ -1,7 +1,9 @@
+import style from './TransactionHistory.module.css';
+
 const Transaction = () => {
     return (
         <div>
-            <table className="transaction-history"></table>
+            <table className={style['transaction-history']}></table>
         </div>
     )
 }
