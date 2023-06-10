@@ -14,9 +14,9 @@ const InfoHistory = ({ type, amount, currency }) => {
     );
 };
 
-InfoHistory.protoTypes = {
+InfoHistory.propTypes = {
     type: PropTypes.string.isRequired,
-    amount: PropTypes.number.isRequired,
+    amount: PropTypes.string.isRequired,
     currency: PropTypes.string.isRequired,
 }
 

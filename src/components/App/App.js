@@ -1,11 +1,9 @@
 import Profile from 'components/Profile';
 import Statistics from 'components/Statistics';
-// import StatisticsItem from 'components/StatisticsItem/StatisticsItem';
-import Friend from 'components/Friend';
-import FriendList from 'components/FriendList';
+import FriendList from 'components/FriendList/FriendList';
+
 import TransactionHistory from 'components/TransactionHistory';
-import TransNameHistory from 'components/TransNameHistory';
-import TransInfoHistory from 'components/TransInfoHistory';
+// import TransNameHistory from 'components/TransNameHistory';
 
 import user from 'data/user.json';
 import data from 'data/data.json';
@@ -23,17 +21,8 @@ const App = () => {
             avatar={user.avatar}
             stats={user.stats} />
         <Statistics title="Upload stats" stats={data} />
-        <Friend friends={friends} />
-        {friends.map((listFriend) => (
-            <FriendList key={listFriend.id} {...listFriend} />
-        ))
-        }
+        <FriendList friends={friends} />
         <TransactionHistory items={transactions} />
-        <TransNameHistory />
-        {transactions.map((listTrans) => (
-            <TransInfoHistory key={listTrans.id} {...listTrans} />
-        ))}
-
     </div>
 }
 
