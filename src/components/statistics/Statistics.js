@@ -1,5 +1,5 @@
-import StatisticsItem from '../statistics/statisticsItem/';
-import data from '../data/data.json';
+import StatisticsItem from 'components/Statistics/StatisticsItems';
+import data from 'data/data.json';
 import PropTypes from 'prop-types';
 
 const Statistics = () => {

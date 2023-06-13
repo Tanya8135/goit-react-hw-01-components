@@ -1,4 +1,4 @@
-import TransactionHistory from "./transactionHistory";
+import TransactionHistory from 'components/Transaction/TransactionHistory';
 
 const Transaction = () => {
     return (

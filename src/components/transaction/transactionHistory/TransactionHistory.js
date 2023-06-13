@@ -1,6 +1,6 @@
-import NameHistory from "./nameHistory";
-import InfoHistory from "./infoHistory";
-import transactions from "../../data/transactions.json";
+import NameHistory from 'components/Transaction/TransactionHistory/NameHistory';
+import InfoHistory from 'components/Transaction/TransactionHistory/InfoHistory';
+import transactions from 'data/transactions.json';
 
 
 const TransactionHistory = () => {

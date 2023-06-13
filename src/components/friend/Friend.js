@@ -1,5 +1,5 @@
-import FriendList from './friendList';
-import friends from '../data/friends.json';
+import FriendList from 'components/Friend/FriendList';
+import friends from 'data/friends.json';
 
 const Friend = () => {
     return (
