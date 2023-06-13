@@ -1,17 +1,13 @@
+import StatisticsItem from 'components/Statistics/StatisticsItems';
+import data from 'data/data.json';
 import PropTypes from 'prop-types';
 
-import data from 'data/data.json';
-
-import StatisticsItem from 'components/StatisticsItem';
-
-import style from './Statistics.module.css';
-
-const Statistics = ({ title }) => {
+const Statistics = () => {
     return (
-        <div className={style['stat-container']}>
-            <section className={style['stat-section']}>
-                <h2 className={style['stat-title']}>{title}</h2>
-                <ul className={style['stat-list']}>
+        <div className="stat-container">
+            <section className="stat-section">
+                <h2 className="stat-title">Upload stats</h2>
+                <ul className="stat-list">
                     {data.map((list) => (
                         <StatisticsItem key={list.id} {...list} />
                     ))
@@ -23,7 +19,7 @@ const Statistics = ({ title }) => {
 };
 
 Statistics.propTypes = {
-    title: PropTypes.string
+    title: PropTypes.string,
 }
 
 export default Statistics;
